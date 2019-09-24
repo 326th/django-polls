@@ -15,3 +15,7 @@ polls vote
 2. access this directory
 3. run command ...\> py manage.py runserver
 4. open your browser and go to http://127.0.0.1:8000/polls
+
+### [Using application as an admin](ASADMIN.md)
+
+### [Using application as a voter](ASUSER.md)
