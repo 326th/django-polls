@@ -13,8 +13,8 @@ polls vote
 
 1. open your terminal
 2. access this directory
-3. run command ...\> py manage.py runserver
-4. open your browser and go to http://127.0.0.1:8000/polls
+3. py manage.py migrate // don't have to run after first time
+4. run command ...\> py manage.py runserver
 
 ### [Using application as an admin](ASADMIN.md)
 
