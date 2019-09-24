@@ -11,10 +11,11 @@ polls vote
 
  ## Running
 
-1. open your terminal
-2. access this directory
-3. py manage.py migrate // don't have to run after first time
-4. run command ...\> py manage.py runserver
+1. Open your terminal
+2. Access this directory
+3. Run command ...\>py manage.py migrate                            // don't have to run after first time
+4. Add .env file in Myweb folder and writes DEBUG=True in .env      // don't have to run after first time
+4. Run command ...\> py manage.py runserver
 
 ### [Using application as an admin](ASADMIN.md)
 
