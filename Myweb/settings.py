@@ -74,8 +74,8 @@ WSGI_APPLICATION = 'Myweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('DATABASES_ENGINE'),
-        'NAME': os.path.join(BASE_DIR, config('DATABASES_NAME')),
+        'ENGINE': config('DATABASES_ENGINE',default='django.db.backends.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, config('DATABASES_NAME',default='db.sqlite3')),
     }
 }
 
@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = config('TIMEZONE')
+TIME_ZONE = config('TIMEZONE',default='UTC')
 
 USE_I18N = True
 
