@@ -1,4 +1,5 @@
  ## Django Polls Application
+ ###### by Thananan Eim-on
 Django Polls is a application that allows you to run server and collect
 polls vote
 
