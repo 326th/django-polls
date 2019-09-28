@@ -3,6 +3,17 @@
 Django Polls is a application that allows you to run server and collect
 polls vote
 
+ ## Installation
+
+Clone or download this Project then do the following
+
+1. Open your terminal
+2. Access this directory
+3. Run command ...\> py manage.py migrate
+                   $ python manage.py migrate
+                   
+ ### [How to customize your website](CUSTOMIZATION.md)
+                   
  ## Requirements
 
  The application requires
@@ -14,13 +25,9 @@ polls vote
 
 1. Open your terminal
 2. Access this directory
-3. Run command ...\>py manage.py migrate                               // don't have to run after first time
-                   $ python manage.py migrate
-4. Run command ...\> py manage.py runserver    
+3. Run command ...\> py manage.py runserver    
                    $ python manage.py runserver
 
 ### [Using application as an admin](ASADMIN.md)
 
 ### [Using application as a voter](ASUSER.md)
-
-### [How to customize your website](CUSTOMIZATION.md)
