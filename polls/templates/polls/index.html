@@ -1,9 +1,20 @@
+{% if user.is_authenticated %}
+welcome {% if user.first_name == ''%}
+	{{user.username.title}}
+	{% else %}
+	{{user.first_name.title}}
+	{%endif%}
+	you can <a href = "{%url 'logout'%}">logout here<a>
+{%else%}
+	please <a href = "{%url 'login'%}">login<a>
+{%endif%}
+<h1>Polls</h1>
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        <li><a href="{% url 'polls:detail' question.id %}" name = "{{forloop.counter}}">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No polls are available.</p>
-{% endif %}
+{% endif %} 

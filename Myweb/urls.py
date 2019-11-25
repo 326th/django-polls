@@ -22,4 +22,5 @@ urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
     path('', redirect_polls),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
