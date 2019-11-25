@@ -27,7 +27,7 @@ class TestEndToEnd(unittest.TestCase):
         """got to /polls, click the last link and check the url"""
         browser = self.set_up(DRIVER_PATH,BROWSER_PATH)
         browser.get("http://localhost:8000/polls/")
-        elements = browser.find_elements_by_name("1")
-        elements[-1].click()
+        element = browser.find_element_by_name("1")
+        element.click()
 
         self.assertEqual(browser.current_url,"http://localhost:8000/polls/1/")
